@@ -5,14 +5,26 @@
     <title>23403000924 易湘的第一个网页</title>
     <style>
         body {
-            font-family: "微软雅黑";
+            font-family: "微软雅黑", sans-serif;
             text-align: center;
             padding: 50px;
-            background-color: #f8f9fa;
+            background-color: #f5f7fa;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         h1 {
             color: #2c3e50;
-            font-size: 32px;
+            font-size: 36px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
         }
         .content {
             margin-top: 30px;
@@ -20,28 +32,60 @@
             color: #333;
             line-height: 1.8;
         }
+        .major-info {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #e8f4fc;
+            border-left: 4px solid #3498db;
+            text-align: left;
+            border-radius: 4px;
+        }
+        .major-info h3 {
+            color: #2980b9;
+            margin-top: 0;
+        }
         .info {
             margin-top: 20px;
             font-size: 16px;
             color: #666;
-            border: 1px solid #eee;
             padding: 15px;
-            border-radius: 8px;
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
+            border-top: 1px dashed #ddd;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #999;
         }
     </style>
 </head>
 <body>
-    <h1>23403000924 易湘的第一个网页</h1>
-    <div class="content">
-        <p>这是我用VSCode制作的第一个网页~</p>
-        <p>GitHub用户名：0603yixiang</p>
-        <p>网页在线访问地址：https://0603yixiang.github.io</p>
-    </div>
-    <div class="info">
-        <p>学号：23403000924 | 姓名：易湘</p>
+    <div class="container">
+        <h1>23403000924 易湘的第一个网页</h1>
+        <div class="content">
+            <p>这是我用VSCode制作的第一个网页，属于数字媒体技术专业的基础实践作业~</p>
+            <p>GitHub用户名：0603yixiang</p>
+            <p>网页在线访问地址：<a href="https://0603yixiang.github.io" target="_blank">https://0603yixiang.github.io</a></p>
+        </div>
+
+        <!-- 数字媒体技术专业相关内容 -->
+        <div class="major-info">
+            <h3>我的专业：数字媒体技术</h3>
+            <p>数字媒体技术是一门融合<span style="color:#e74c3c; font-weight:bold">计算机技术、艺术设计、多媒体创作</span>的交叉学科，主要学习内容包括：</p>
+            <ul>
+                <li>网页设计与前端开发（如本次作业的HTML/CSS实践）</li>
+                <li>影视特效、动画制作、交互设计</li>
+                <li>数字内容创作工具（如PS、AE、Unity等）的技术开发与应用</li>
+            </ul>
+            <p>后续我会在这个网页中逐步添加专业相关的作品（如交互demo、媒体作品展示）~</p>
+        </div>
+
+        <div class="info">
+            <p>学号：23403000924 | 姓名：易湘 | 专业：数字媒体技术</p>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 易湘 - 数字媒体技术专业基础网页实践</p>
+        </div>
     </div>
 </body>
 </html>
